@@ -1,0 +1,14 @@
+C:\Users\Andrei\source\repos\AtomCcompiler\AtomCcompiler\bin\Debug\net10.0\AtomCcompiler.exe
+C:\Users\Andrei\source\repos\AtomCcompiler\AtomCcompiler\bin\Debug\net10.0\AtomCcompiler.deps.json
+C:\Users\Andrei\source\repos\AtomCcompiler\AtomCcompiler\bin\Debug\net10.0\AtomCcompiler.runtimeconfig.json
+C:\Users\Andrei\source\repos\AtomCcompiler\AtomCcompiler\bin\Debug\net10.0\AtomCcompiler.dll
+C:\Users\Andrei\source\repos\AtomCcompiler\AtomCcompiler\bin\Debug\net10.0\AtomCcompiler.pdb
+C:\Users\Andrei\source\repos\AtomCcompiler\AtomCcompiler\obj\Debug\net10.0\AtomCcompiler.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Andrei\source\repos\AtomCcompiler\AtomCcompiler\obj\Debug\net10.0\AtomCcompiler.AssemblyInfoInputs.cache
+C:\Users\Andrei\source\repos\AtomCcompiler\AtomCcompiler\obj\Debug\net10.0\AtomCcompiler.AssemblyInfo.cs
+C:\Users\Andrei\source\repos\AtomCcompiler\AtomCcompiler\obj\Debug\net10.0\AtomCcompiler.csproj.CoreCompileInputs.cache
+C:\Users\Andrei\source\repos\AtomCcompiler\AtomCcompiler\obj\Debug\net10.0\AtomCcompiler.dll
+C:\Users\Andrei\source\repos\AtomCcompiler\AtomCcompiler\obj\Debug\net10.0\refint\AtomCcompiler.dll
+C:\Users\Andrei\source\repos\AtomCcompiler\AtomCcompiler\obj\Debug\net10.0\AtomCcompiler.pdb
+C:\Users\Andrei\source\repos\AtomCcompiler\AtomCcompiler\obj\Debug\net10.0\AtomCcompiler.genruntimeconfig.cache
+C:\Users\Andrei\source\repos\AtomCcompiler\AtomCcompiler\obj\Debug\net10.0\ref\AtomCcompiler.dll
