@@ -101,3 +101,4 @@ C:\Users\Andrei\source\repos\AtomCcompiler\AtomCcompiler\AtomCcompiler.Tests\obj
 C:\Users\Andrei\source\repos\AtomCcompiler\AtomCcompiler\AtomCcompiler.Tests\obj\Debug\net10.0\AtomCcompiler.Tests.pdb
 C:\Users\Andrei\source\repos\AtomCcompiler\AtomCcompiler\AtomCcompiler.Tests\obj\Debug\net10.0\AtomCcompiler.Tests.genruntimeconfig.cache
 C:\Users\Andrei\source\repos\AtomCcompiler\AtomCcompiler\AtomCcompiler.Tests\obj\Debug\net10.0\ref\AtomCcompiler.Tests.dll
+C:\Users\Andrei\source\repos\AtomCcompiler\AtomCcompiler\AtomCcompiler.Tests\obj\Debug\net10.0\AtomCcompiler.Tests.sourcelink.json

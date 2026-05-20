@@ -5,7 +5,8 @@ int isdigit(char ch)
 
 void main()
 {
-	char		c;
+
+	char;
 	put_s("c=");
 	c=get_c();
 	put_i(isdigit(c));

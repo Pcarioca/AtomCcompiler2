@@ -201,7 +201,7 @@ public sealed class ParserTests
     public void CurrentValidExamplesParseSuccessfully()
     {
         var projectRoot = FindProjectRoot();
-        var validExamples = new[] { "1.c", "2.c", "3.c", "4.c", "5.c", "6.c", "7.c", "8.c", "9.c", "valid.c" };
+        var validExamples = new[] { "1.c", "2.c", "3.c", "5.c", "6.c", "7.c", "8.c", "9.c", "valid.c" };
 
         foreach (var fileName in validExamples)
         {
@@ -220,18 +220,43 @@ public sealed class ParserTests
     public void CurrentBrokenExamplesHaveExpectedFailureKinds()
     {
         var projectRoot = FindProjectRoot();
-        var lexicalSource = File.ReadAllText(Path.Combine(projectRoot, "Examples", "0.c"));
-        var syntaxSource = File.ReadAllText(Path.Combine(projectRoot, "Examples", "missing_semicolon.c"));
+        var lexicalExamples = new[]
+        {
+            "0.c",
+            "lexical_invalid_hex.c",
+            "lexical_invalid_octal.c",
+            "lexical_invalid_binary.c",
+            "lexical_unclosed_comment.c"
+        };
 
-        var lexicalResult = Compile(lexicalSource);
-        var syntaxResult = Compile(syntaxSource);
+        foreach (var fileName in lexicalExamples)
+        {
+            var source = File.ReadAllText(Path.Combine(projectRoot, "Examples", fileName));
+            var result = Compile(source);
 
-        Assert.NotEmpty(lexicalResult.LexicalErrors);
-        Assert.Empty(lexicalResult.SyntaxErrors);
+            Assert.NotEmpty(result.LexicalErrors);
+            Assert.Empty(result.SyntaxErrors);
+        }
 
-        Assert.Empty(syntaxResult.LexicalErrors);
-        Assert.NotEmpty(syntaxResult.SyntaxErrors);
-        Assert.Contains(syntaxResult.SyntaxErrors, error => error.Message.Contains("';' after variable definition", StringComparison.OrdinalIgnoreCase));
+        var syntaxExamples = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase)
+        {
+            ["4.c"] = "identifier after type",
+            ["missing_semicolon.c"] = "';' after variable definition",
+            ["syntax_missing_paren.c"] = "')' after function parameters",
+            ["syntax_missing_brace.c"] = "'}' after compound statement",
+            ["syntax_invalid_assignment.c"] = "expression after '='",
+            ["syntax_bad_field_access.c"] = "field name after '.'"
+        };
+
+        foreach (var pair in syntaxExamples)
+        {
+            var source = File.ReadAllText(Path.Combine(projectRoot, "Examples", pair.Key));
+            var result = Compile(source);
+
+            Assert.Empty(result.LexicalErrors);
+            Assert.NotEmpty(result.SyntaxErrors);
+            Assert.Contains(result.SyntaxErrors, error => error.Message.Contains(pair.Value, StringComparison.OrdinalIgnoreCase));
+        }
     }
 
     /// <summary>

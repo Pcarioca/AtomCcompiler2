@@ -243,7 +243,6 @@ public sealed class AtomCLexer
                         lexeme.Append(Advance());
                         ConsumeNumberTail(lexeme);
                         AddError(errors, tokenStart, "Invalid octal literal.");
-                        Console.WriteLine($"Invalid octal literal at line {tokenStart.line}, column {tokenStart.column}: digit '{current}' is not valid in octal literals.");
                         return null;
                     }
 

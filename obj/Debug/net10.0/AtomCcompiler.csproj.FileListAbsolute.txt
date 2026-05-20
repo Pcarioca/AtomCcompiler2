@@ -12,3 +12,4 @@ C:\Users\Andrei\source\repos\AtomCcompiler\AtomCcompiler\obj\Debug\net10.0\refin
 C:\Users\Andrei\source\repos\AtomCcompiler\AtomCcompiler\obj\Debug\net10.0\AtomCcompiler.pdb
 C:\Users\Andrei\source\repos\AtomCcompiler\AtomCcompiler\obj\Debug\net10.0\AtomCcompiler.genruntimeconfig.cache
 C:\Users\Andrei\source\repos\AtomCcompiler\AtomCcompiler\obj\Debug\net10.0\ref\AtomCcompiler.dll
+C:\Users\Andrei\source\repos\AtomCcompiler\AtomCcompiler\obj\Debug\net10.0\AtomCcompiler.sourcelink.json

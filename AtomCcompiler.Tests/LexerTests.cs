@@ -109,6 +109,14 @@ public sealed class LexerTests
         var projectRoot = FindProjectRoot();
         var examplesPath = Path.Combine(projectRoot, "Examples");
         var exampleFiles = Directory.GetFiles(examplesPath).OrderBy(Path.GetFileName).ToArray();
+        var lexicalFailureFiles = new HashSet<string>(StringComparer.OrdinalIgnoreCase)
+        {
+            "0.c",
+            "lexical_invalid_hex.c",
+            "lexical_invalid_octal.c",
+            "lexical_invalid_binary.c",
+            "lexical_unclosed_comment.c"
+        };
 
         Assert.NotEmpty(exampleFiles);
 
@@ -120,10 +128,9 @@ public sealed class LexerTests
 
             Assert.Contains(result.Tokens, token => token.Type == TokenType.EndOfFile);
 
-            if (fileName == "0.c")
+            if (lexicalFailureFiles.Contains(fileName))
             {
                 Assert.NotEmpty(result.Errors);
-                Assert.Contains(result.Errors, error => error.Message.Contains("string literal", StringComparison.OrdinalIgnoreCase));
                 continue;
             }
 

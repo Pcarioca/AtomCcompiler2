@@ -1,4 +1,4 @@
-using AtomCcompiler.Compiler;
+﻿using AtomCcompiler.Compiler;
 
 // This class hosts the console entry point for the Atom C compiler demo.
 internal static class Program
