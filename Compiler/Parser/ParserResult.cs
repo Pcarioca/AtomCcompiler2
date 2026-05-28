@@ -5,8 +5,13 @@ namespace AtomCcompiler.Compiler.Parser;
 /// <summary>
 /// This class contains the output of syntax analysis.
 /// </summary>
-public sealed class ParserResult
-{
+public sealed class ParserResult{
+
+    /// <summary>
+    /// This property exposes the syntax error list.
+    /// </summary>
+    public IReadOnlyList<SyntaxError> Errors { get; }
+
     /// <summary>
     /// This constructor stores the syntax error list.
     /// </summary>
@@ -16,10 +21,7 @@ public sealed class ParserResult
         Errors = errors;
     }
 
-    /// <summary>
-    /// This property exposes the syntax error list.
-    /// </summary>
-    public IReadOnlyList<SyntaxError> Errors { get; }
+
 
     /// <summary>
     /// This property indicates whether parsing completed without syntax errors.

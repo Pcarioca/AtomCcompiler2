@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AtomCcompiler.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7b93017e92a9f5e8ac63f42c2b11da254a193a32")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bbb92894440b06fd1a991eaeaa54ada3b7fb2222")]
 [assembly: System.Reflection.AssemblyProductAttribute("AtomCcompiler.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AtomCcompiler.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
